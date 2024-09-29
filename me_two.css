@@ -1,0 +1,125 @@
+
+        /* Apply Google Sans Serif Font */
+        body, h1, h2, p, ul, li, table, th, td, input, select, label {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        /* Styling H1 and H2 */
+        h1, h2 {
+            color: #4A90E2;
+            font-size: 24px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        /* Center the list with border */
+        ul {
+            border: 2px solid #4A90E2; /* Border around the list */
+            width: 50%; /* Adjust width as needed */
+            margin: 0 auto; /* Center the list container */
+            padding: 15px; /* Padding inside the container */
+            text-align: left; /* Ensure list items are left-aligned */
+            list-style-position: inside; /* Keep bullets inside the border */
+            padding-left: 0; /* Remove default left padding */
+        }
+
+       /* Food container adjustments */
+        .food-container {
+            display: flex; /* Use flexbox to align items */
+            align-items: flex-start; /* Align items at the top */
+            justify-content: flex-start; /* Align the container contents to the left */
+            margin: 0; /* Remove any default margins */
+            padding: 0; /* Remove any default padding */
+            width: 100%; /* Ensure the container takes up full width */
+        }
+
+        /* Food image adjustments */
+        .food-image-div {
+            background-image: url('images/Oven Baked Lasagna.jpg');
+            background-size: cover;
+            background-position: center;
+            width: 200px;
+            height: 200px;
+            margin-right: 20px; /* Add space between image and text */
+        }
+
+        /* Food description adjustments */
+        .food-description {
+            margin: 0; /* Remove any default margins */
+            padding: 0; /* Remove any default padding */
+            max-width: 600px; /* Optional: Limit the width of the description */
+            text-align: left; /* Ensure text is left-aligned */
+        }
+
+
+        /* Style alternating rows in table */
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 20px auto;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #4A90E2;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+       
+        /* Style for form */
+        form {
+            margin: 30px auto; /* Center the entire form */
+            width: auto; /* Use automatic width */
+            display: flex;
+            flex-direction: column; /* Stack form elements vertically */
+            align-items: flex-start; /* Align elements to the left */
+        }
+
+        form div {
+            display: flex;
+            width: 100%; /* Full width for each row */
+            justify-content: center; /* Center the content in each row */
+            margin: 5px 0; /* Add some space between fields */
+        }
+
+        form label {
+            width: 100px; /* Fixed width for labels */
+            text-align: right;
+            padding-right: 10px; /* Add space between label and input */
+        }
+
+        form input, form select {
+            width: 200px; /* Set a fixed width for input and select fields */
+        }
+
+        form button {
+            margin: 20px auto; /* Center the button */
+            display: block; /* Ensure it occupies its own line */
+            padding: 10px 20px;
+            background-color: #4A90E2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #357ABD; /* Change button color on hover */
+        }
+
+        .social-icons {
+            position: fixed;
+            top: 100px;
+            right: 35px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        
+        .social-icons img {
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+        }
+
