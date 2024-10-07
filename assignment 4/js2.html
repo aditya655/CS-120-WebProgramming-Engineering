@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Problem 2</title>
+</head>
+<body>
+    <script>
+        // Fahrenheit to Celsius conversion
+        let fahrenheit = prompt("Enter temperature in Fahrenheit:");
+        let celsius = (fahrenheit - 32) * (5/9);
+        alert(`${fahrenheit} Fahrenheit is equal to ${celsius.toFixed(2)} Celsius`);
+
+        // Celsius to Fahrenheit conversion
+        celsius = prompt("Enter temperature in Celsius:");
+        fahrenheit = (celsius * 9/5) + 32;
+        alert(`${celsius} Celsius is equal to ${fahrenheit.toFixed(2)} Fahrenheit`);
+    </script>
+</body>
+</html>

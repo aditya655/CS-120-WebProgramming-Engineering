@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Problem 6</title>
+</head>
+<body>
+    <div id="answer"></div>
+    <script>
+        // Function to count elements less than a given value
+        function count(arr, value) {
+            let count = 0;
+            for (let i = 0; i < arr.length; i++) {
+                if (arr[i] < value) {
+                    count++;
+                }
+            }
+            return count;
+        }
+
+        // Test function to call count() and display result
+        function testCount() {
+            let array = [3, 55, 30, 28, 9, 12];
+            let value = 10;
+            let result = count(array, value);
+            document.getElementById("answer").innerText = `The count of numbers less than ${value} is: ${result}`;
+        }
+
+        // Call testCount() to display result
+      
+        testCount();
+    </script>
+</body>
+</html>

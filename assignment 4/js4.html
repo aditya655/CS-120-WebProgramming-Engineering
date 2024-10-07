@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Problem 4</title>
+</head>
+<body>
+    <script>
+        // Get the range values from the user
+        let start = parseInt(prompt("Enter the start of the range:"));
+        let end = parseInt(prompt("Enter the end of the range:"));
+
+        let sum = 0;
+        document.write("Odd numbers in the range:<br>");
+        
+        // Iterate through the range and display odd numbers and sum
+        for (let i = start; i <= end; i++) {
+            sum += i; // Calculate sum
+            if (i % 2 !== 0) {
+                document.write(i + "<br>"); // Display odd numbers
+            }
+        }
+
+        document.write(`<br>The sum of all numbers in the range is: ${sum}`);
+    </script>
+</body>
+</html>

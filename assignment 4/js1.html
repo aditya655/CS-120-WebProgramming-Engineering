@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Problem 1</title>
+</head>
+<body>
+    <script>
+        // Prompt for first name and last name
+        let firstName = prompt("Enter your first name:");
+        let lastName = prompt("Enter your last name:");
+
+        // Display full name in an alert
+        alert(`Your name is ${firstName} ${lastName}`);
+
+        // Ask for the number of children
+        let numberOfChildren = prompt("How many children do you have?");
+
+        // Display number of children on the page
+        let message;
+        if (numberOfChildren == 0) {
+            message = "You have no children";
+        } else if (numberOfChildren == 1) {
+            message = "You have 1 child";
+        } else {
+            message = `You have ${numberOfChildren} children`;
+        }
+        document.write(message);
+    </script>
+</body>
+</html>
