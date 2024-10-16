@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Problem 2 - Name List</title>
+    <script>
+        window.onload = function() {
+            let names = "Pat, Chris, Marlon, Ferncroft, Assunta";
+            let nameArray = names.split(", ");
+            let listItems = nameArray.map((name, index) => `<li>${index + 1}. ${name}</li>`).join("");
+            document.getElementById("nameList").innerHTML = `<ul>${listItems}</ul>`;
+        }
+    </script>
+</head>
+<body>
+    <h1>Problem 2: Name List</h1>
+    <div id="nameList"></div>
+</body>
+</html>
