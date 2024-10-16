@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Problem 4 - Dynamic Greetings</title>
+    <script>
+        function speak(event) {
+            let name = document.getElementById("nameInput").value;
+            let prefix = event.target.innerText;
+            alert(prefix + " " + name);
+        }
+        window.onload = function() {
+            let buttons = document.querySelectorAll("button");
+            buttons.forEach(button => button.addEventListener("click", speak));
+        }
+    </script>
+</head>
+<body>
+    <h1>Problem 4: Dynamic Greetings</h1>
+    <form>
+        <label for="nameInput">Name: </label>
+        <input type="text" id="nameInput">
+        <button type="button">Hello</button>
+        <button type="button">Good Bye</button>
+        <button type="button">Greetings</button>
+    </form>
+</body>
+</html>
