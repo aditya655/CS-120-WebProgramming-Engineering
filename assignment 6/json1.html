@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Song List</title>
+</head>
+<body>
+  <h1>Song List</h1>
+  <pre id="json-output"></pre>
+
+  <script>
+    // Song list JSON object
+    const songList = [
+      { "title": "Bohemian Rhapsody", "artist": "Queen", "year": 1975, "genres": ["rock"] },
+      { "title": "Billie Jean", "artist": "Michael Jackson", "year": 1982, "genres": ["pop"] },
+      { "title": "Sweet Child O' Mine", "artist": "Guns N' Roses", "year": 1987, "genres": ["rock"] },
+      { "title": "Rolling in the Deep", "artist": "Adele", "year": 2010, "genres": ["pop", "soul"] },
+      { "title": "Stairway to Heaven", "artist": "Led Zeppelin", "year": 1971, "genres": ["rock"] },
+      { "title": "Shape of You", "artist": "Ed Sheeran", "year": 2017, "genres": ["pop"] },
+      { "title": "Take Me Home, Country Roads", "artist": "John Denver", "year": 1971, "genres": ["country"] },
+      { "title": "Jolene", "artist": "Dolly Parton", "year": 1973, "genres": ["country"] },
+      { "title": "Smells Like Teen Spirit", "artist": "Nirvana", "year": 1991, "genres": ["rock"] },
+      { "title": "Wrecking Ball", "artist": "Miley Cyrus", "year": 2013, "genres": ["pop"] }
+    ];
+
+    // Convert JSON object to a string and display it
+    const jsonString = JSON.stringify(songList, null, 2);
+    document.getElementById("json-output").innerText = jsonString;
+  </script>
+</body>
+</html>

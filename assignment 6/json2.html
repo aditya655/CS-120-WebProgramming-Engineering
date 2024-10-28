@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Song List</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <h1>Song List from JSON File</h1>
+  <div id="song-list"></div>
+
+  <script>
+    $.get('songs.json', function(data) {
+      let output = '';
+      data.forEach(song => {
+        output += `<p><strong>${song.title}</strong><br>Artist: ${song.artist}<br>Genre: ${song.genres.join(', ')}<br>Released: ${song.year}</p>`;
+      });
+      document.getElementById('song-list').innerHTML = output;
+    });
+  </script>
+</body>
+</html>
