@@ -1,0 +1,85 @@
+body, html {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #f8f9fa;
+}
+
+header {
+    margin-top: 20px;
+}
+
+#game-board {
+    
+    grid-template-rows: repeat(6, 50px);
+    grid-template-columns: repeat(5, 50px);
+    gap: 5px;
+    justify-content: center;
+    margin: 20px auto;
+    width: fit-content;
+}
+
+.cell {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ddd;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    box-sizing: border-box; /* Ensure borders don't affect size */
+}
+
+
+.cell.correct {
+    background-color: #6aaa64; /* Green for correct position */
+}
+
+.cell.present {
+    background-color: #c9b458; /* Gold for correct letter but wrong position */
+}
+
+.cell.absent {
+    background-color: #787c7e; /* Grey for letter not in the word */
+}
+
+.row {
+    display: flex;
+    gap: 5px;
+}
+
+#input-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between elements */
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+#guess-input {
+    padding: 10px;
+    font-size: 16px;
+    width: 150px;
+}
+
+#submit-guess, #restart-game {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    #game-board {
+        grid-template-rows: repeat(6, 40px);
+        grid-template-columns: repeat(5, 40px);
+    }
+    .cell {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+    #guess-input, #submit-guess, #restart-game {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
